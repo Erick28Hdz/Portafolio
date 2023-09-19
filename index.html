@@ -82,7 +82,7 @@
             </div>
           </nav>
             <section class="hero">
-              <div class="container">
+              <div class="container-hero">
                 <h1 id="Inicio" class="titulo">Erik Darney Hernandez Torres</h1>
                 <div class="hero-content row">  
                   <div class="perfil col-lg-4 col-md-6">
@@ -179,7 +179,7 @@
             <div class="Cursos col-md-6">
                 <nav id="navbar-cursos" class="navbar-Cursos">
                   <h3 id="titulo-cursos" href="#"><b>Cursos</b></h3>
-                    <div class="container">
+                    <div class="container-lista">
                       <ul class="nav-lista">
                         <li class="nav-item">
                           <a class="nav-link" href="#titulo-cursoscortos">Cortos</a>
@@ -492,14 +492,16 @@
                     </div>
                   </div>
                 </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselCursoscortos" data-bs-slide="prev">
+                  <div class="container-botones">
+                    <button class="carousel-controluno-prev" type="button" data-bs-target="#carouselCursoscortos" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselCursoscortos" data-bs-slide="next">
+                <button class="carousel-controluno-next" type="button" data-bs-target="#carouselCursoscortos" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
+                  </div>
               </section>
                 <section class="sectiondiplomados">
                   <h4 id="titulo-diplomados" href="#Diplomados">Diplomados</h4>
@@ -557,11 +559,11 @@
                       </div>
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselDiplomados" data-bs-slide="prev">
+                  <button class="carousel-controldos-prev" type="button" data-bs-target="#carouselDiplomados" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselDiplomados" data-bs-slide="next">
+                  <button class="carousel-controldos-next" type="button" data-bs-target="#carouselDiplomados" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
@@ -586,11 +588,11 @@
                       </div>                     
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselseminarios" data-bs-slide="prev">
+                  <button class="carousel-controltres-prev" type="button" data-bs-target="#carouselseminarios" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselseminarios" data-bs-slide="next">
+                  <button class="carousel-controltres-next" type="button" data-bs-target="#carouselseminarios" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
@@ -651,11 +653,11 @@
                       </div>
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselCreditosUniversitarios" data-bs-slide="prev">
+                  <button class="carousel-controlcuatro-prev" type="button" data-bs-target="#carouselCreditosUniversitarios" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselCreditosUniversitarios" data-bs-slide="next">
+                  <button class="carousel-controlcuatro-next" type="button" data-bs-target="#carouselCreditosUniversitarios" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
@@ -696,11 +698,12 @@
         <hr class="barra-exp">
         <h2 id="Experiencia-laboral"><b>Experiencia laboral</b></h2>
       <section class="contenedor-experiencia"> 
-        <h3 id="titulocontratos">Contratos</h3> 
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
+         
+        <div class="col-lg-12">
             <div class="Experiencia">
-              <div class="card">
+              <h3 id="titulocontratos">Contratos</h3>
+              <article class="contratos">
+                <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Instalar Security System</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">Auxiliar</h6>
@@ -746,14 +749,16 @@
                     <p class="parrafolugar">Colombia - Bogotá</p>
                   </div>
                 </div>
+              </article>
             </div>
+          
           </div>
-          </div>
-            <h2 id="titulofreelance">Freelance</h2>
-            <div class="row">
+            
               <div class="col-lg-12">  
                 <div class="Experiencia">
-                    <div class="card">
+                  <h2 id="titulofreelance">Freelance</h2>
+                    <article class="Freelance">
+                      <div class="card">
                       <div class="card-body">
                         <h5 class="card-title">Proximamente</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">Proximamente</h6>
@@ -763,14 +768,14 @@
                         <p class="parrafolugar">Proximo</p>
                       </div>
                     </div>
+                    </article>
                 </div>
               </div>
-            </div>
-            <h2 id="tituloindependiente">Independinte</h2>
-            <div class="row">
               <div class="col-lg-12">             
                 <div class="Experiencia">
-                    <div class="card">
+                  <h2 id="tituloindependiente">Independinte</h2>
+                    <article class="Independiente">
+                      <div class="card">
                       <div class="card-body">
                         <h5 class="card-title">Artista callejero</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">Artesano y Malabarista</h6>
@@ -782,9 +787,9 @@
                         <p class="parrafolugar">Colombia - Ecuador</p>
                       </div>
                     </div>
+                    </article>
                 </div>
               </div>
-            </div>
           </div>
       </section>
         <hr class="barra-pro">
@@ -795,9 +800,9 @@
           <div>
             <!-- Sección de páginas terminadas -->
             <h2 id="tituloterminados">Terminados</h2>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="Terminados row-cols-1 row-cols-md-2 g-4">
               <!-- Tarjeta descripción diseño "Cara de papa" -->
-              <div class="col">
+              <div class="terminados col-lg-12">
                 <div class="card">
                   <img src="images/mr.potato.jpg" class="card-img-top" alt="">
                   <div class="card-body">
@@ -817,9 +822,9 @@
           <div>
                <!-- Sección de páginas en proceso -->
             <h2 id="tituloproceso">En Proceso</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="Proceso row-cols-1 row-cols-md-3 g-4">
               <!-- Tarjeta descripción página "Inmobiliaria" -->
-              <div class="col">
+              <div class="proceso">
                   <div class="card">
                     <img src="images/inmobiliaria.jpg" class="card-img-top" alt="">
                     <div class="card-body">
@@ -836,7 +841,7 @@
                   </div>
                 </div>
                 <!-- Tarjeta descripción página "Rumbo" -->
-                <div class="col">
+                <div class="proceso">
                   <div class="card">
                     <img src="images/rumbo.jpg" class="card-img-top" alt="">
                     <div class="card-body">
@@ -853,7 +858,7 @@
                   </div>
                 </div>
                 <!-- Tarjeta descripción página "Fruver" -->
-                <div class="col">
+                <div class="proceso">
                   <div class="card">
                     <img src="images/fruver.jpg" class="card-img-top" alt="">
                     <div class="card-body">
@@ -874,9 +879,9 @@
             </div>
                 <!-- Sección de investigación -->
              <h2 id="tituloinvestigacion">De Investigación</h2>
-              <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="investigacion row-cols-1 row-cols-md-2 g-4">
                 <!-- Tarjeta descripción ArteGestión -->
-                <div class="col">
+                <div class="tarjeta">
                     <div class="card">
                       <img src="images/ArteGestión.png" class="card-img-top" alt="">
                       <div class="card-body">
@@ -893,7 +898,7 @@
                     </div>
                   </div>
                   <!-- Tarjeta descripción Futbolero -->
-                  <div class="col">
+                  <div class="tarjeta">
                     <div class="card">
                       <img src="images/futbolero.png" class="card-img-top" alt="">
                       <div class="card-body">
@@ -912,7 +917,7 @@
                   </div>
                 </div>
               </div>
-          </div>
+        </div>
       </section>
     </main>
     
