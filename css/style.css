@@ -22,8 +22,13 @@ body {
   overflow-x: hidden;
   background-color: var(--color-secondary);
 }
-/*Header*/
+/***HEADER***/
 /*Barra de navegación principal*/
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /*Banner principal*/
 .section .hero {
   display: flex;
@@ -46,6 +51,11 @@ body {
       var(--color-accent);
   background-size: 9px 9px;
   background-position: center;
+}
+
+.container-hero {
+  width: 100%;
+  margin-bottom: 5px;
 }
 
 .hero h1 {
@@ -72,7 +82,6 @@ h1:hover {
 }
 
 .hero-content .row {
-  display: flex;
   align-items: center;
   justify-items: center;
   margin: 0 auto;
@@ -152,13 +161,10 @@ h1:hover {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-left: 10px;
   order: 1;
   font-size: var(--parrafos);
   font-family: var(--letra-subtitulos);
-  position: relative;
   padding: 5px;
-  left: 30px;
   margin: 0 auto;
   width: 50%;
 }
@@ -544,9 +550,9 @@ a {
   border-color: 2px solid var(--color-primary);
   border-radius: 15px;
   box-shadow: 0px 2px 30px var(--color-background);
-  width: 70%;
+  width: 85%;
   height: 100%;
-  margin: 15px auto;
+  margin: 10px auto;
   padding: 10px;
 }
 
@@ -608,23 +614,19 @@ a {
   color: var(--color-primary);
   border: 1px solid var(--color-background);
 }
-
+/*Contenedor de cursos*/
 .Cursos {
   width: 90%;
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   border: 2px var(--color-secondary) solid;
   border-radius: 5px;
-  position: relative;
   box-shadow: 0px 5px 15px var(--color-primary);
   background-color: var(--color-primary);
   padding: 10px;
   margin-top: 15px;
-  margin: 10px auto;
 }
 
 .navbar-Cursos {
@@ -645,9 +647,14 @@ a {
   text-shadow: 2px 4px 3px var(--color-background);
   margin-bottom: 10px;
   position: relative;
-  bottom: 25px;
+  bottom: 10px;
   text-decoration: none;
-  margin: 20px;
+  margin: 15px;
+}
+
+/*Sección de botones de cursos*/
+.container-lista {
+  width: 100%;
 }
 
 .nav-lista {
@@ -657,7 +664,7 @@ a {
   padding: 5px 8px;
   gap: 10px;
   height: auto;
-  width: 70%;
+  width: auto;
   align-self: center;
 }
 
@@ -685,26 +692,12 @@ a {
   padding: 1px 10px;
 }
 
-#carouselCursoscortos {
-  background-color: var(--color-secondary);
-  padding: 30px 40px 40px;
-  box-shadow: 2px 2px 8px 1px var(--color-background);
-  border: 1px var(--color-background) solid;
-  border-radius: 5px;
-  width: 100%;
-  height: 650px;
-  justify-content: center;
-  margin: 0 auto;
+.nav-item a {
+  font-size: 18px;
+  max-width: 95%;
 }
 
-.carousel-indicators {
-  background-color: #000;
-  width: 80%;
-  margin: 0 auto;
-  padding: 5px;
-  bottom: 10px;
-  box-shadow: 0px 1px 5px var(--color-background);
-}
+/**Secciones de cursos**/
 
 .carousel-inner {
   width: 100%;
@@ -717,36 +710,70 @@ a {
   height: 100%;
 }
 
-.carousel-caption {
+/*.carousel-caption {
+  /*separarlos por cada seccion
   margin: 0px auto;
   padding: 0px;
+}*/
+
+.carousel-caption {
+  height: 50px;
+  position: relative;
+  padding: 20px;
+  margin: 20px;
+  left: 0;
 }
 
-.carousel-control-prev {
-  margin: 30px;
-  width: 10%;
-  height: 20%;
+.carousel-indicators {
+  background-color: #000;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px;
+  bottom: 10px;
+  box-shadow: 0px 1px 5px var(--color-background);
 }
-
-.carousel-control-next {
-  margin: 30px;
-  width: 10%;
-  height: 20%;
-}
-
+/*Seccion cursos cortos*/
 .sectioncursocortos {
   background-color: var(--color-accent);
-  width: 95%;
+  width: 100%;
   padding: 20px;
   border-radius: 5px;
 }
 
 #titulo-cursoscortos {
-  margin-top: 10px;
   font-family: var(--letra-subtitulos);
   font-size: var(--subtitulos);
   text-shadow: 2px 4px 3px var(--color-secondary);
   color: var(--color-primary);
+}
+
+#carouselCursoscortos {
+  background-color: var(--color-secondary);
+  padding: 30px 40px 40px;
+  box-shadow: 2px 2px 8px 1px var(--color-background);
+  border: 1px var(--color-background) solid;
+  border-radius: 5px;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.carousel-controluno-prev {
+  width: 5%;
+  position: relative;
+  bottom: 400px;
+  right: 395px;
+  border: none;
+  background-color: transparent;
+}
+
+.carousel-controluno-next {
+  width: 5%;
+  position: relative;
+  bottom: 400px;
+  left: 400px;
+  border: none;
+  background-color: transparent;
 }
 
 .containercursos {
@@ -782,21 +809,26 @@ a {
   border: 1px var(--color-background) solid;
   border-radius: 5px;
   width: 100%;
-  height: 650px;
   justify-content: center;
   margin: 0 auto;
 }
 
-.carousel-control-prev {
-  margin: 30px;
-  width: 10%;
-  height: 20%;
+.carousel-controldos-prev {
+  width: 5%;
+  position: relative;
+  bottom: 350px;
+  right: 395px;
+  border: none;
+  background-color: transparent;
 }
 
-.carousel-control-next {
-  margin: 30px;
-  width: 10%;
-  height: 10%;
+.carousel-controldos-next {
+  width: 5%;
+  position: relative;
+  bottom: 350px;
+  left: 395px;
+  border: none;
+  background-color: transparent;
 }
 
 .sectiondiplomados {
@@ -840,7 +872,7 @@ a {
   object-fit: cover;
   box-shadow: 0px -2px 7px 3px var(--color-background);
 }
-
+/*Seccion de seminarios*/
 #carouselseminarios {
   background-color: var(--color-secondary);
   padding: 30px 40px 40px;
@@ -848,19 +880,26 @@ a {
   border: 1px var(--color-background) solid;
   border-radius: 5px;
   width: 100%;
-  height: 650px;
   justify-content: center;
   margin: 0 auto;
 }
 
-.carousel-control-prevs {
-  height: 100%;
-  width: 20%;
+.carousel-controltres-prev {
+  width: 5%;
+  position: relative;
+  bottom: 350px;
+  right: 395px;
+  border: none;
+  background-color: transparent;
 }
 
-.carousel-control-nexts {
-  height: 100%;
-  width: 20%;
+.carousel-controltres-next {
+  width: 5%;
+  position: relative;
+  bottom: 350px;
+  left: 395px;
+  border: none;
+  background-color: transparent;
 }
 
 .sectionseminarios {
@@ -912,19 +951,26 @@ a {
   border: 1px var(--color-background) solid;
   border-radius: 5px;
   width: 100%;
-  height: 650px;
   justify-content: center;
   margin: 0 auto;
 }
 
-.carousel-control-prevcu {
-  height: 100%;
-  width: 20%;
+.carousel-controlcuatro-prev {
+  width: 5%;
+  position: relative;
+  bottom: 650px;
+  right: 395px;
+  border: none;
+  background-color: transparent;
 }
 
-.carousel-control-nextcu {
-  height: 100%;
-  width: 20%;
+.carousel-controlcuatro-next {
+  width: 5%;
+  position: relative;
+  bottom: 650px;
+  left: 395px;
+  border: none;
+  background-color: transparent;
 }
 
 .sectioncrediuni {
@@ -1032,11 +1078,13 @@ a {
 }
 
 #titulo-habilidades {
-  font-size: var(--subtitulos);
+  background-color: var(--color-background);
+  border-radius: 2px;
+  width: 100%;
   color: var(--color-secondary);
   font-family: var(--letra-titulos);
-  text-shadow: 2px 4px 3px var(--color-background);
-  margin: 20px;
+  margin: 0px auto;
+  padding: 5px;
 }
 
 .habi-digitales {
@@ -1122,9 +1170,16 @@ a {
   padding: 10px;
 }
 
-.Experiencia {
-  width: 100%;
+.contratos {
   display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.Experiencia {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
   border: 2px var(--color-secondary) solid;
   border-radius: 2px;
   box-shadow: 0px 5px 15px var(--color-primary);
@@ -1135,23 +1190,23 @@ a {
 
 #titulocontratos {
   font-size: var(--subtitulos);
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-family: var(--letra-titulos);
   text-shadow: 2px 4px 3px var(--color-background);
   margin-bottom: 10px;
   position: relative;
-  top: 15px;
+  bottom: 10px;
   text-decoration: none;
-  margin: 20px;
+  text-align: center;
+  margin: 15px;
 }
 
 .card {
   background-color: var(--color-accent);
   width: 18rem;
-  height: 100%;
-  margin: 0 auto;
   border-radius: 5px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   justify-items: center;
 }
@@ -1186,26 +1241,39 @@ a {
 
 #titulofreelance {
   font-size: var(--subtitulos);
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-family: var(--letra-titulos);
   text-shadow: 2px 4px 3px var(--color-background);
   margin-bottom: 10px;
   position: relative;
-  top: 15px;
+  bottom: 10px;
   text-decoration: none;
-  margin: 20px;
+  text-align: center;
+  margin: 15px;
+}
+.Freelance {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 #tituloindependiente {
   font-size: var(--subtitulos);
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-family: var(--letra-titulos);
   text-shadow: 2px 4px 3px var(--color-background);
   margin-bottom: 10px;
   position: relative;
-  top: 15px;
+  bottom: 10px;
   text-decoration: none;
-  margin: 20px;
+  text-align: center;
+  margin: 15px;
+}
+
+.Independiente {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .Experiencia .parrafoexp {
@@ -1313,6 +1381,16 @@ a {
   text-decoration: none;
   margin: 20px;
 }
+.Terminados {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.terminados {
+  justify-content: center;
+  display: flex;
+}
 
 #tituloproceso {
   font-size: var(--subtitulos);
@@ -1324,6 +1402,18 @@ a {
   top: 15px;
   text-decoration: none;
   margin: 20px;
+}
+.Proceso {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.proceso {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #tituloinvestigacion {
@@ -1337,9 +1427,16 @@ a {
   text-decoration: none;
   margin: 20px;
 }
-
-.col {
-  padding-bottom: 20px;
+.investigacion {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+.tarjeta {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* Footer */
@@ -1432,6 +1529,11 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 990px) {
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+  }
+
   .Botones {
     flex-direction: column;
     text-align: center;
@@ -1441,10 +1543,114 @@ a {
     margin: 5px 0;
     display: block;
   }
+
+  .nav-lista {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carousel-controluno-prev,
+  .carousel-controluno-next {
+    display: none;
+  }
+
+  .carousel-controldos-prev,
+  .carousel-controldos-next {
+    display: none;
+  }
+  .carousel-controltres-prev,
+  .carousel-controltres-next {
+    display: none;
+  }
+  .carousel-controlcuatro-prev,
+  .carousel-controlcuatro-next {
+    display: none;
+  }
+
+  .Experiencia {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .proceso {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .investigacion {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
-  .row .justify-content-center {
+  .perfil {
+    order: 1;
+  }
+  .informacion {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .descripcion {
+    order: 3;
+  }
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+  }
+
+  .Botones {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Botones a {
+    margin: 5px 0;
+    display: block;
+  }
+
+  .nav-lista {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carousel-controluno-prev,
+  .carousel-controluno-next {
+    display: none;
+  }
+
+  .carousel-controldos-prev,
+  .carousel-controldos-next {
+    display: none;
+  }
+  .carousel-controltres-prev,
+  .carousel-controltres-next {
+    display: none;
+  }
+  .carousel-controlcuatro-prev,
+  .carousel-controlcuatro-next {
+    display: none;
+  }
+
+  .Experiencia {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Proceso {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .investigacion {
     display: flex;
     flex-direction: column;
   }
