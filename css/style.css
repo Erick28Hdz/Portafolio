@@ -22,11 +22,28 @@ body {
   overflow-x: hidden;
   background-color: var(--color-secondary);
 }
-/***HEADER***/
-/*Barra de navegación principal*/
+
 .container-fluid {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0px;
+}
+/***HEADER***/
+
+/*Barra de navegación principal*/
+
+.container-nav {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  display: flex;
+}
+
+.navbar-brand {
+  position: relative;
+  left: 30px;
+}
+
+.navbar-title {
+  line-height: 30px;
 }
 
 /*Banner principal*/
@@ -72,7 +89,7 @@ h1 {
   top: 20px;
   text-shadow: 3px 6px 8px var(--color-background);
   width: 80%;
-  margin: 0 auto;
+  margin: 30px auto;
   justify-items: center;
 }
 
@@ -81,7 +98,8 @@ h1:hover {
   text-shadow: 3px 1px 2px var(--color-primary);
 }
 
-.hero-content .row {
+.hero-content {
+  display: flex;
   align-items: center;
   justify-items: center;
   margin: 0 auto;
@@ -90,7 +108,7 @@ h1:hover {
 .hero-content > div {
   flex: 1;
   padding: 5px;
-  margin: 70px auto;
+  margin: 30px auto;
   width: 90%;
 }
 
@@ -142,8 +160,6 @@ h1:hover {
   height: 45px;
   background-color: #d9d9d9;
   position: relative;
-  top: 30px;
-  right: 65px;
   border-radius: 5px;
   transition: transform 0.3s;
   margin: 0 auto;
@@ -153,20 +169,21 @@ h1:hover {
   transform: scale(1.4);
 }
 
-.hero .informacion {
-  color: var(--color-primary);
-}
-
+/*Sección información*/
 .informacion {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   order: 1;
   font-size: var(--parrafos);
   font-family: var(--letra-subtitulos);
   padding: 5px;
   margin: 0 auto;
   width: 50%;
+}
+
+.hero .informacion {
+  color: var(--color-primary);
 }
 
 .informacion .Logo {
@@ -182,7 +199,6 @@ h1:hover {
   height: 80px;
   position: relative;
   bottom: 30px;
-  left: 55px;
   padding: 5px;
   background-color: #ffffff;
 }
@@ -190,8 +206,9 @@ h1:hover {
 .inf-principal {
   width: 300px;
   padding: 10px 20px;
-  position: relative;
-  left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   background: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(4px);
@@ -710,12 +727,6 @@ a {
   height: 100%;
 }
 
-/*.carousel-caption {
-  /*separarlos por cada seccion
-  margin: 0px auto;
-  padding: 0px;
-}*/
-
 .carousel-caption {
   height: 50px;
   position: relative;
@@ -1170,22 +1181,27 @@ a {
   padding: 10px;
 }
 
-.contratos {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
 .Experiencia {
-  width: 90%;
+  width: 95%;
   display: flex;
-  flex-direction: column;
   border: 2px var(--color-secondary) solid;
   border-radius: 2px;
   box-shadow: 0px 5px 15px var(--color-primary);
   background-color: var(--color-primary);
   padding: 10px;
-  margin: 10px auto;
+  margin: 15px auto;
+  align-items: center;
+}
+
+.cartas-col-12 {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.contratos {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 #titulocontratos {
@@ -1193,9 +1209,6 @@ a {
   color: var(--color-secondary);
   font-family: var(--letra-titulos);
   text-shadow: 2px 4px 3px var(--color-background);
-  margin-bottom: 10px;
-  position: relative;
-  bottom: 10px;
   text-decoration: none;
   text-align: center;
   margin: 15px;
@@ -1203,7 +1216,8 @@ a {
 
 .card {
   background-color: var(--color-accent);
-  width: 18rem;
+  width: 100%;
+  margin: 10px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -1213,8 +1227,8 @@ a {
 
 .card-body {
   background-color: #d9d9d9;
-  padding: 5px;
-  margin: 10px;
+  padding: 2px;
+  margin: 2px;
 }
 
 .card-title {
@@ -1244,9 +1258,6 @@ a {
   color: var(--color-secondary);
   font-family: var(--letra-titulos);
   text-shadow: 2px 4px 3px var(--color-background);
-  margin-bottom: 10px;
-  position: relative;
-  bottom: 10px;
   text-decoration: none;
   text-align: center;
   margin: 15px;
@@ -1262,9 +1273,6 @@ a {
   color: var(--color-secondary);
   font-family: var(--letra-titulos);
   text-shadow: 2px 4px 3px var(--color-background);
-  margin-bottom: 10px;
-  position: relative;
-  bottom: 10px;
   text-decoration: none;
   text-align: center;
   margin: 15px;
@@ -1353,8 +1361,7 @@ a {
 }
 
 .Proyectos {
-  width: 90%;
-  height: auto;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1362,7 +1369,6 @@ a {
   text-align: center;
   border: 2px var(--color-secondary) solid;
   border-radius: 5px;
-  position: relative;
   box-shadow: 0px 5px 15px var(--color-primary);
   background-color: var(--color-primary);
   padding: 10px;
@@ -1381,15 +1387,28 @@ a {
   text-decoration: none;
   margin: 20px;
 }
+
 .Terminados {
   display: flex;
   width: 100%;
   margin: 0 auto;
   justify-content: center;
 }
+
 .terminados {
   justify-content: center;
   display: flex;
+}
+
+.cardpapa {
+  background-color: var(--color-accent);
+  width: 40%;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
 }
 
 #tituloproceso {
@@ -1405,15 +1424,27 @@ a {
 }
 .Proceso {
   display: flex;
-  width: 100%;
+  flex-direction: row;
   margin: 0 auto;
+  width: 60%;
+  margin-left: 70px;
 }
 
-.proceso {
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
+.Proceso-col-12 {
+  margin: 0 auto;
   justify-content: center;
+  padding: 10px;
+}
+
+.cardproceso {
+  background-color: var(--color-accent);
+  width: 100%;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
 }
 
 #tituloinvestigacion {
@@ -1427,21 +1458,42 @@ a {
   text-decoration: none;
   margin: 20px;
 }
+
 .investigacion {
   display: flex;
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
+  align-items: center;
+}
+
+.cardinvest {
+  background-color: var(--color-accent);
+  width: 100%;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
 }
 .tarjeta {
-  padding: 20px;
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
+  margin: 0 auto;
+}
+
+.tarjeta-col-12 {
+  margin: 0 auto;
   justify-content: center;
+  padding: 10px;
+  width: 40%;
 }
 
 /* Footer */
 
 #contactos {
+  width: 100%;
   background: var(--color-secondary);
   padding: 20px;
   display: flex;
@@ -1528,7 +1580,13 @@ a {
   color: var(--color-secondary);
 }
 
-@media screen and (min-width: 768px) and (max-width: 990px) {
+@media screen and (min-width: 801px) and (max-width: 1240px) {
+  .hero-content {
+    flex-direction: column;
+  }
+  .perfil {
+    order: 1;
+  }
   .btn-group {
     display: flex;
     flex-direction: column;
@@ -1570,24 +1628,54 @@ a {
   .Experiencia {
     display: flex;
     flex-direction: column;
+    width: 90%;
+  }
+  .cardpapa {
+    width: 60%;
   }
 
-  .proceso {
+  .Proceso {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .tarjeta {
+    width: 100%;
   }
 
   .investigacion {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contactos {
+    width: 100%;
+  }
+  .enlaces {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #estudios-profesionales,
+  #habilidades-profesionales,
+  #Experiencia-laboral {
+    text-align: center;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (min-width: 220px) and (max-width: 800px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
   .perfil {
     order: 1;
   }
+
   .informacion {
     display: flex;
     flex-direction: column;
@@ -1600,6 +1688,7 @@ a {
   .descripcion {
     order: 3;
   }
+
   .btn-group {
     display: flex;
     flex-direction: column;
@@ -1645,13 +1734,40 @@ a {
     flex-direction: column;
   }
 
+  .Proyectos {
+    justify-content: center;
+    align-items: center;
+  }
+  .cardpapa {
+    width: 80%;
+  }
   .Proceso {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .investigacion {
     display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+
+  .tarjeta {
+    width: 100%;
+  }
+  .contactos {
+    width: 100%;
+  }
+  .enlaces {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #estudios-profesionales,
+  #habilidades-profesionales,
+  #Experiencia-laboral {
+    text-align: center;
   }
 }
