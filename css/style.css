@@ -33,19 +33,19 @@ body {
 .container-nav {
   padding-left: 10px;
   padding-right: 10px;
-  width: 100%;
   display: flex;
-}
-
-.navbar-brand {
-  position: relative;
-  left: 30px;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .navbar-title {
   line-height: 30px;
 }
 
+.navbar-toggler {
+  position: relative;
+  left: 250px;
+}
 /*Banner principal*/
 .section .hero {
   display: flex;
