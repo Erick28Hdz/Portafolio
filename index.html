@@ -16,9 +16,9 @@
 <body class="container-fluid">
     <header>
         <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand"> Mi Portafolio Web</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" 
+            <div class="container-nav">
+              <a class="navbar-brand navbar-title"><b>Mi Portafolio Web</b></a>
+              <button class="navbar-toggler  ms-auto me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" 
               aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -73,18 +73,14 @@
                       </ul>
                     </li>
                   </ul>
-                  <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-success" type="submit">Buscar</button>
-                  </form>
-                </div>
+                  </div>
               </div>
             </div>
           </nav>
             <section class="hero">
               <div class="container-hero">
                 <h1 id="Inicio" class="titulo">Erik Darney Hernandez Torres</h1>
-                <div class="hero-content row">  
+                <div class="hero-content">  
                   <div class="perfil col-lg-4 col-md-6">
                     <img src="images/Rectangle 1.png" alt="" class="foto">
                     <p class="subtitulo"><b>Bienvenido a mi Portafolio digital Web</b></p>
@@ -146,7 +142,7 @@
           <hr class="barra-des">
       </div>
       <section class="contenedor-descripcion">
-        <div class="container"> 
+        <div class="container" data-aos="zoom-in-up" data-aos-duration="1000"> 
           <div class="Descripcion">
             <h2 class="titulo-descripcion"><b>Descripcion General</b></h2>
               <p class="parrafog" data-aos="zoom-out-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"
@@ -165,8 +161,10 @@
         </div>
       </section>
       <hr class="barra-est">
-      <div class="container">
-        <h2 id="estudios-profesionales"><b>Estudios Profesionales</b></h2>
+      <div class="container" data-aos="zoom-in-up" data-aos-duration="1000">
+        <h2 id="estudios-profesionales" data-aos="fade-right"
+            data-aos-offset="350"
+            data-aos-easing="ease-in-sine"><b>Estudios Profesionales</b></h2>
         <section class="contenedor-estudio">
           <div class="container"> 
             <div class="Estudios col-md-6">
@@ -177,8 +175,11 @@
                 data-aos-easing="ease-in-sine">Tecnologo profesional en Analísis y desarrollo de software - SENA 2025</p>
             </div>
             <div class="Cursos col-md-6">
-                <nav id="navbar-cursos" class="navbar-Cursos">
-                  <h3 id="titulo-cursos" href="#"><b>Cursos</b></h3>
+              <h3 id="titulo-cursos" href="#"><b>Cursos</b></h3>  
+              <nav id="navbar-cursos" class="navbar-Cursos" data-aos="fade-down"
+                     data-aos-easing="linear"
+                      data-aos-duration="1500">
+                  
                     <div class="container-lista">
                       <ul class="nav-lista">
                         <li class="nav-item">
@@ -196,7 +197,7 @@
                       </ul>
                     </div>
                 </nav>
-            <section class="sectioncursocortos">
+            <section class="sectioncursocortos" data-aos="zoom-in-down" data-aos-duration="2000">
               <h4 id="titulo-cursoscortos" href="Cursos-cortos">Cursos Cortos</h4>
               <div id="carouselCursoscortos" class="carousel slide">
                 <div class="carousel-indicators">
@@ -503,7 +504,7 @@
                 </button>
                   </div>
               </section>
-                <section class="sectiondiplomados">
+                <section class="sectiondiplomados" data-aos="zoom-in-down" data-aos-duration="2000">
                   <h4 id="titulo-diplomados" href="#Diplomados">Diplomados</h4>
                   <div id="carouselDiplomados" class="carousel slide">
                     <div class="carousel-indicators">
@@ -568,7 +569,7 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </section>
-                <section class="sectionseminarios">
+                <section class="sectionseminarios" data-aos="zoom-in-down" data-aos-duration="2000">
                   <h4 id="titulo-seminarios" href="#Seminarios">Seminarios</h4>
                   <div id="carouselseminarios" class="carousel slide">
                     <div class="carousel-indicators">
@@ -597,7 +598,7 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </section>
-                <section class="sectioncrediuni">
+                <section class="sectioncrediuni" data-aos="zoom-in-down" data-aos-duration="2000">
                   <h4 id="titulo-crediuni" href="#Creditos">Creditos Universidad</h4>
                   <div id="carouselCreditosUniversitarios" class="carousel slide">
                     <div class="carousel-indicators">
@@ -669,9 +670,10 @@
       </section>
 
       <hr class="barra-hab">
-      
-      <h2 id="habilidades-profesionales"><b>Habilidades Profesionales</b></h2>
-        <section class="contenedor-habilidades"> 
+      <h2 id="habilidades-profesionales" data-aos="fade-left"
+            data-aos-offset="350"
+            data-aos-easing="ease-in-sine"><b>Habilidades Profesionales</b></h2>
+        <section class="contenedor-habilidades" data-aos="zoom-in-up" data-aos-duration="1000"> 
           <div class="Habilidades row">
             <div class="col-lg-6">
               <section>
@@ -696,68 +698,93 @@
     </section>
             
         <hr class="barra-exp">
-        <h2 id="Experiencia-laboral"><b>Experiencia laboral</b></h2>
-      <section class="contenedor-experiencia"> 
-         
-        <div class="col-lg-12">
-            <div class="Experiencia">
-              <h3 id="titulocontratos">Contratos</h3>
-              <article class="contratos">
-                <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Instalar Security System</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Auxiliar</h6>
-                    <p class="card-text">Realizar instalación de camaras de seguridad, alarmas de seguridad 
-                      y programar el sistema de seguridad; tambien, realizar prevención.</p>
-                    <p class="card-fecha">Agosto 2016 - Mayo 2017</p>  
-                    <p class="parrafoexpe">10 meses</p>
-                    <p class="parrafolugar">Colombia - Bogotá</p>
-                </div>
+        <h2 id="Experiencia-laboral" data-aos="fade-right"
+            data-aos-offset="350"
+            data-aos-easing="ease-in-sine"><b>Experiencia laboral</b></h2>
+      <section class="contenedor-experiencia" data-aos="zoom-in-up" data-aos-duration="2000"> 
+        <div class="container">
+          <div class="Experiencia">
+            <h3 id="titulocontratos">Contratos</h3>
+            <div class="row">
+              <div class="cartas-col-12">
+                  <article class="contratos" data-aos="flip-left" data-aos-duration="3000">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Instalar Security System</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Auxiliar</h6>
+                        <p class="card-text">Realizar instalación de cámaras de seguridad, alarmas de seguridad 
+                          y programar el sistema de seguridad; también, realizar prevención.</p>
+                        <p class="card-fecha">Agosto 2016 - Mayo 2017</p>  
+                        <p class="parrafoexpe">10 meses</p>
+                        <p class="parrafolugar">Colombia - Bogotá</p>
+                      </div>
+                    </div>
+                  </article>
+                
               </div>
-              <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Ingelmac</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Auxiliar</h6>
-                    <p class="card-text">Auxiliar de obras electricas y cometidas en tuberia de metal para
-                      transportar el cable de corriente.</p>
-                    <p class="card-fecha">Septimbre 2017 - Junio 2018</p>  
-                    <p class="parrafoexpe">8 meses</p>
-                    <p class="parrafolugar">Colombia - Bogotá</p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Camping Illuchi</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Administrador</h6>
-                    <p class="card-text">Encargado del lugar donde se hospedan viajeros, recaudar el dinero de hospedaje
-                      establecer trabajo a personal de limpieza (voluntarios); tener los servicios
-                      adecuados para los clientes.</p>
-                    <p class="card-fecha">Agosto 2019 - Febrero 2020</p>  
-                    <p class="parrafoexpe">7 meses</p>
-                    <p class="parrafolugar">Ecuador - Baños de agua santa</p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Campaña 106 - Camara por Bogotá</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Administrador</h6>
-                    <p class="card-text">Encargado del manejo de personal y redes sociales, realizaba publicidad y 
-                      repartia los volantes con las personas en calle, visitamos varias reuniones;
-                      participamos de eventos sociales.</p>
-                    <p class="card-fecha">Agosto 2019 - Febrero 2020</p>  
-                    <p class="parrafoexpe">7 meses</p>
-                    <p class="parrafolugar">Colombia - Bogotá</p>
-                  </div>
-                </div>
-              </article>
             </div>
-          
+        
+            <div class="row">
+              <div class="cartas-col-12">
+                <article class="contratos" data-aos="flip-left" data-aos-duration="3000">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Ingelmac</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Auxiliar</h6>
+                      <p class="card-text">Auxiliar de obras eléctricas y cometidas en tubería de metal para
+                        transportar el cable de corriente.</p>
+                      <p class="card-fecha">Septiembre 2017 - Junio 2018</p>  
+                      <p class="parrafoexpe">8 meses</p>
+                      <p class="parrafolugar">Colombia - Bogotá</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="cartas-col-12">
+                <article class="contratos" data-aos="flip-left" data-aos-duration="3000">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Camping Illuchi</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Administrador</h6>
+                      <p class="card-text">Encargado del lugar donde se hospedan viajeros, recaudar el dinero de hospedaje
+                        establecer trabajo a personal de limpieza (voluntarios); tener los servicios adecuados para los clientes.</p>
+                      <p class="card-fecha">Agosto 2019 - Febrero 2020</p>  
+                      <p class="parrafoexpe">7 meses</p>
+                      <p class="parrafolugar">Ecuador - Baños de agua santa</p>
+                    </div>
+                  </div>
+              </article>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="cartas-col-12">
+                <article class="contratos" data-aos="flip-left" data-aos-duration="3000">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Campaña 106 - Cámara por Bogotá</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Administrador</h6>
+                      <p class="card-text">Encargado del manejo de personal y redes sociales, realizaba publicidad y 
+                        repartía los volantes con las personas en la calle, visitamos varias reuniones;
+                        participamos de eventos sociales.</p>
+                      <p class="card-fecha">Agosto 2019 - Febrero 2020</p>  
+                      <p class="parrafoexpe">7 meses</p>
+                      <p class="parrafolugar">Colombia - Bogotá</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
           </div>
+        
             
               <div class="col-lg-12">  
                 <div class="Experiencia">
                   <h2 id="titulofreelance">Freelance</h2>
-                    <article class="Freelance">
+                    <article class="Freelance" data-aos="flip-down">
                       <div class="card">
                       <div class="card-body">
                         <h5 class="card-title">Proximamente</h5>
@@ -774,7 +801,7 @@
               <div class="col-lg-12">             
                 <div class="Experiencia">
                   <h2 id="tituloindependiente">Independinte</h2>
-                    <article class="Independiente">
+                    <article class="Independiente" data-aos="flip-down">
                       <div class="card">
                       <div class="card-body">
                         <h5 class="card-title">Artista callejero</h5>
@@ -791,19 +818,23 @@
                 </div>
               </div>
           </div>
+        </div>
       </section>
         <hr class="barra-pro">
         <!-- Sección de PROYECTOS -->
-        <h2 id="titulo-proyectos"><b>Proyectos</b></h2>
-        <section class="contenedor-proyectos"> 
+        <h2 id="titulo-proyectos" data-aos="fade-left"
+            data-aos-offset="350"
+            data-aos-easing="ease-in-sine"><b>Proyectos</b></h2>
+      <section class="contenedor-proyectos" data-aos="zoom-in-up" data-aos-duration="1000"> 
         <div class="Proyectos">
-          <div>
-            <!-- Sección de páginas terminadas -->
+           <!-- Sección de páginas terminadas -->
             <h2 id="tituloterminados">Terminados</h2>
             <div class="Terminados row-cols-1 row-cols-md-2 g-4">
               <!-- Tarjeta descripción diseño "Cara de papa" -->
               <div class="terminados col-lg-12">
-                <div class="card">
+                <div class="cardpapa" data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500">
                   <img src="images/mr.potato.jpg" class="card-img-top" alt="">
                   <div class="card-body">
                     <h5 class="card-title">Señor "Cara de papa"</h5>
@@ -819,13 +850,14 @@
                 </div>
               </div>
             </div>
-          <div>
+          
                <!-- Sección de páginas en proceso -->
             <h2 id="tituloproceso">En Proceso</h2>
-            <div class="Proceso row-cols-1 row-cols-md-3 g-4">
+            <div class="Proceso row-cols-1 row-cols-md-2 g-4">
               <!-- Tarjeta descripción página "Inmobiliaria" -->
-              <div class="proceso">
-                  <div class="card">
+              <div class="Proceso-col-12">
+                  <div class="cardproceso" data-aos="fade-up"
+                       data-aos-duration="3000">
                     <img src="images/inmobiliaria.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                       <h5 class="card-title">Pagina Web "Inmobiliaria"</h5>
@@ -841,8 +873,9 @@
                   </div>
                 </div>
                 <!-- Tarjeta descripción página "Rumbo" -->
-                <div class="proceso">
-                  <div class="card">
+                <div class="Proceso-col-12">
+                  <div class="cardproceso" data-aos="fade-up"
+                       data-aos-duration="3000">
                     <img src="images/rumbo.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                       <h5 class="card-title">Pagina web "Rumbo"</h5>
@@ -858,8 +891,9 @@
                   </div>
                 </div>
                 <!-- Tarjeta descripción página "Fruver" -->
-                <div class="proceso">
-                  <div class="card">
+                <div class="Proceso-col-12">
+                  <div class="cardproceso" data-aos="fade-up"
+                       data-aos-duration="3000">
                     <img src="images/fruver.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                       <h5 class="card-title">Pagina web "Fruver"</h5>
@@ -876,13 +910,15 @@
                   </div>
                 </div>
               </div>
-            </div>
+            
                 <!-- Sección de investigación -->
              <h2 id="tituloinvestigacion">De Investigación</h2>
               <div class="investigacion row-cols-1 row-cols-md-2 g-4">
                 <!-- Tarjeta descripción ArteGestión -->
-                <div class="tarjeta">
-                    <div class="card">
+                <div class="tarjeta-col-12">
+                    <div class="cardinvest" data-aos="fade-right"
+                          data-aos-offset="300"
+                          data-aos-easing="ease-in-sine">
                       <img src="images/ArteGestión.png" class="card-img-top" alt="">
                       <div class="card-body">
                         <h5 class="card-title">Plataforma "ArteGestión"</h5>
@@ -898,8 +934,10 @@
                     </div>
                   </div>
                   <!-- Tarjeta descripción Futbolero -->
-                  <div class="tarjeta">
-                    <div class="card">
+                  <div class="tarjeta-col-12">
+                    <div class="cardinvest" data-aos="fade-left"
+                          data-aos-offset="300"
+                          data-aos-easing="ease-in-sine">
                       <img src="images/futbolero.png" class="card-img-top" alt="">
                       <div class="card-body">
                         <h5 class="card-title">Plataforma "Futbolero"</h5>
@@ -917,8 +955,9 @@
                   </div>
                 </div>
               </div>
-        </div>
-      </section>
+            </div>
+          </div>
+        </section>
     </main>
     
     <!-- Sección del footer -->
