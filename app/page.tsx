@@ -1,65 +1,69 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import Hero from "@/components/inicio/Hero";
+import TabsViewFancy from "@/components/inicio/TabsViewFancy";
+import Footer from "@/components/ui/Footer";
+import { serviceTabs } from "@/data/services";
+import Navbar from "@/components/ui/Navbar";
+import GlowCard from "@/components/ui/GlowCard";
+import MapaSudamerica from "@/components/inicio/MapaSudamerica";
+import { JSX } from "react";
+
+export default function HomePage(): JSX.Element {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-secondary text-primary">
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Hero Section */}
+      <section id="hero" className="py-10">
+        <Hero />
+      </section>
+
+      {/* Sobre mí / Descripción */}
+      <section className="w-full mx-auto max-w-[90%] py-10 flex justify-center items-center">
+        <GlowCard title="Perfil Profesional" className="max-w-4xl">
+          <p className="mt-4">
+            Me considero un apasionado autodidacta que busca constantemente la
+            mejora de habilidades y la excelencia en diversos aspectos
+            profesionales dentro de una empresa.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+          <p className="mt-4">
+            Mi viaje como mochilero por Suramérica me brindó la invaluable
+            oportunidad de adquirir una amplia gama de habilidades y
+            experiencias. Durante este tiempo, aprendí a sobrevivir con un
+            modesto salario diario, asumiendo una variedad de roles y desafíos.
+          </p>
+
+          <p className=" mt-4">
+            Lo que me define como profesional es mi inquebrantable compromiso y
+            energía en cada tarea que emprendo. Soy conocido por ser altamente
+            responsable y organizado, incluso en las situaciones más complejas.
+            Mi búsqueda constante de la perfección me impulsa a entregar
+            resultados excepcionales. Además, valoro enormemente el trabajo en
+            equipo y la colaboración efectiva, creyendo que el éxito se logra
+            mejor cuando se trabaja en conjunto.
+          </p>
+        </GlowCard>
+        <section id="mapa" className="py-10">
+          <h2 className="text-center text-primary">
+            Mi viaje por Sudamérica
+          </h2>
+          <MapaSudamerica />
+        </section>
+      </section>
+
+      {/* Servicios */}
+      <section id="services" className="py-20">
+        <h2 className="text-h2 mb-10 text-center text-background">
+          Servicios ofrecidos
+        </h2>
+        <TabsViewFancy tabs={serviceTabs} />
+      </section>
+
+      {/* Footer */}
+      <Footer />
+    </main>
   );
 }

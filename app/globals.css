@@ -1,26 +1,201 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+body {
+  margin: 0;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
 }
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  /* 🎨 Paleta de colores principal */
+  --color-primary: #eeeeee; /* texto claro */
+  --color-secondary: #000000; /* texto oscuro */
+  --color-accent: #4e4feb; /* color principal / botones */
+  --color-background: #068fff; /* fondo principal */
+
+  /* 🔹 Tamaños base */
+  --titulos: 32px; /* tamaño h1 base */
+  --subtitulos: 25px; /* tamaño h2/h3 */
+  --parrafos: 16px; /* textos normales */
+  --Textos: 14px; /* textos pequeños / info */
+  --anuncios: 16px;
+  --botones: 18px;
+
+  /* 🔹 Tipografía */
+  --letra-principal: "New Rocker", cursive; /* fuente para H1 principal */
+  --letra-titulos: "Roboto", sans-serif; /* H2/H3 */
+  --letra-subtitulos: "Raleway", sans-serif; /* H4/H5/H6 */
+  --letra-textos: "Montserrat", sans-serif; /* parrafos */
+  --letra-botones: "Black Ops One", cursive; /* botones */
+  --letra-anuncios: "Titillium Web", sans-serif; /* anuncios / info */
+  --letra-enlaces: "Exo 2", sans-serif; /* links */
+
+  /* 🔹 Otros */
+  --radius: 0.625rem;
+  --primary-foreground: #000000;
+  --secondary-foreground: #ffffff;
+  --accent-foreground: #ffffff;
+  --background-foreground: #000000;
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --border: #e5e5e5;
+  --input: #e5e5e5;
+  --ring: #2563eb;
+}
+
+/* 🌙 Modo oscuro */
+.dark {
+  --color-primary: #f8fafc;
+  --color-secondary: #000000;
+  --color-accent: #4e4feb;
+  --color-background: #0f172a;
+
+  --primary-foreground: #0f172a;
+  --secondary-foreground: #f8fafc;
+  --accent-foreground: #ffffff;
+  --background-foreground: #f8fafc;
+
+  --card: #1e293b;
+  --card-foreground: #f8fafc;
+  --border: #334155;
+  --input: #334155;
+  --ring: #2563eb;
+}
+
+/* =========================================
+   Clases utilitarias para colores
+   ========================================= */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+.bg-accent {
+  background-color: var(--color-accent);
+}
+.bg-background {
+  background-color: var(--color-background);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+.text-secondary {
+  color: var(--color-secondary);
+}
+.text-accent {
+  color: var(--color-accent);
+}
+.text-background {
+  color: var(--color-background);
+}
+
+/* =========================================
+   Tipografía global de títulos y subtítulos
+   ========================================= */
+h1 {
+  font-family: var(--letra-principal);
+  font-size: var(--titulos);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+
+h2 {
+  font-family: var(--letra-titulos);
+  font-size: var(--subtitulos);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-accent);
+  text-align: center;
+  letter-spacing: 8px;
+  text-shadow: 
+    2px 2px 4px rgba(0,0,0,0.5),
+    0 0 10px rgba(78,79,235,0.5);
+  transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
+}
+
+h2:hover {
+  color: var(--color-accent);
+  text-shadow: 
+    2px 2px 6px rgba(0,0,0,0.6),
+    0 0 15px rgba(78,79,235,0.7);
+  transform: scale(1.03);
+}
+
+h3 {
+  font-family: var(--letra-titulos);
+  font-size: calc(var(--subtitulos) * 0.9);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-primary);
+}
+
+h4, h5, h6 {
+  font-family: var(--letra-subtitulos);
+  line-height: 1.4;
+  color: var(--color-primary);
+}
+
+h4 { font-size: calc(var(--subtitulos) * 0.8); font-weight: 500; }
+h5 { font-size: 0.9rem; font-weight: 500; }
+h6 { font-size: 0.8rem; font-weight: 400; }
