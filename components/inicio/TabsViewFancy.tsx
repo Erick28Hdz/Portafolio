@@ -42,7 +42,7 @@ export default function TabsViewFancy({
     <div className="w-full max-w-4xl mx-auto">
       <div className="flex flex-col sm:flex-row gap-6 rounded-xl overflow-hidden">
         {/* Sidebar */}
-        <div className="sm:w-60 flex sm:flex-col rounded-xl bg-black/5 dark:bg-white/5 backdrop-blur-lg">
+        <div className="sm:w-60 flex sm:flex-col overflow-x-auto sm:overflow-visible whitespace-nowrap rounded-xl bg-black/5 dark:bg-white/5 backdrop-blur-lg">
           {tabs.map((tab) => (
             <button
               key={tab.id}

@@ -38,11 +38,11 @@ function Section({
         {titulo}
       </h3>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 items-stretch">
         {proyectos.map((proyecto) => (
           <GlowCard
             key={proyecto.titulo}
-            className="overflow-hidden p-0"
+            className="overflow-hidden p-0 flex flex-col h-full"
           >
             <ProyectoContent {...proyecto} />
           </GlowCard>
@@ -60,7 +60,7 @@ function ProyectoContent({
 }: Proyecto) {
   return (
     <>
-      <div className="relative w-full h-48">
+      <div className="relative w-full aspect-video">
         <Image
           src={imagen}
           alt={titulo}
@@ -70,7 +70,7 @@ function ProyectoContent({
         />
       </div>
 
-      <div className="p-6 space-y-4">
+      <div className="p-6 flex flex-col grow gap-4">
         <h4 className="text-lg font-semibold text-accent">
           {titulo}
         </h4>
@@ -87,7 +87,7 @@ function ProyectoContent({
           href={enlace}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-2 text-sm bg-accent text-black px-4 py-2 rounded-full hover:scale-105 transition"
+          className="mt-auto w-fit text-sm bg-accent text-black px-4 py-2 rounded-full hover:scale-105 transition"
         >
           Ver Proyecto
         </a>

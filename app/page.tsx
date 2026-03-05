@@ -21,7 +21,7 @@ export default function HomePage(): JSX.Element {
       </section>
 
       {/* Sobre mí / Descripción */}
-      <section className="w-full mx-auto max-w-[90%] py-10 flex justify-center items-center">
+      <section className="w-full mx-auto max-w-[90%] py-10 flex flex-col lg:flex-row justify-center items-center gap-10">
         <GlowCard title="Perfil Profesional" className="max-w-4xl">
           <p className="mt-4">
             Me considero un apasionado autodidacta que busca constantemente la
