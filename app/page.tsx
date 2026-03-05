@@ -11,7 +11,7 @@ import { JSX } from "react";
 
 export default function HomePage(): JSX.Element {
   return (
-    <main className="min-h-screen bg-secondary text-primary">
+    <main>
       {/* Navbar */}
       <Navbar />
 

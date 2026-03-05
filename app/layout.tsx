@@ -52,7 +52,9 @@ export default function RootLayout({
           antialiased
         `}
       >
-        {children}
+        <main className="bg-secondary text-white min-h-screen px-6 md:px-10 py-10">
+          {children}
+        </main>
       </body>
     </html>
   );

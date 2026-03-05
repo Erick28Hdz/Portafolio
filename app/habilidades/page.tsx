@@ -12,7 +12,7 @@ export default function HabilidadesPage() {
   const [categoria, setCategoria] = useState<Categoria>("ofimatica");
 
   return (
-    <main className="bg-secondary text-white min-h-screen px-6 md:px-10 py-10">
+    <main>
       <Navbar />
       {/* Título principal */}
       <h2 className="text-h2 m-10 pb-5 text-center text-background">

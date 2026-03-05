@@ -55,7 +55,6 @@ export default function MapaSudamerica() {
         x="0px"
         y="0px"
         viewBox="0 0 800 600"
-        enableBackground="new 0 0 800 600"
         xmlSpace="preserve"
       >
         {/* Ejemplo de país como path */}
