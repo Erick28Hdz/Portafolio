@@ -1,19 +1,16 @@
-# Node modules
+# Node
 node_modules/
-
-# Next.js build output
-.next/
-out/
-dist/
-
-# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# Editor config
-.vscode/
-.DS_Store
+# Next.js
+.next/
+out/
+
+# TypeScript
+*.tsbuildinfo
 
 # Environment variables
 .env
@@ -21,3 +18,23 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Log files
+*.log
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Build outputs
+dist/
+build/
+
+# Misc
+*.pem
+*.p12
+*.crt
+*.key

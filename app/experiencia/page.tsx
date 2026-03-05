@@ -7,7 +7,7 @@ import { experienceData, Experience } from "@/data/experience";
 
 export default function ExperienciaPage() {
   return (
-    <main className="bg-secondary text-white min-h-screen px-6 md:px-10 py-10">
+    <main>
       <Navbar />
 
       {/* Título principal */}

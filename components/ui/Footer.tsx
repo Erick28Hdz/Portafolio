@@ -102,6 +102,19 @@ export default function Footer() {
               height={30}
             />
           </a>
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNsLfpjRFLdRpNPPBcFlCxFMdxhlfbWlshWCfLkhcmVxXVJBKtBkBSVhkJGgvBzcDpVBZL"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition"
+          >
+            <Image
+              src="/images/Iconos/gmail1.png"
+              alt="Gmail"
+              width={30}
+              height={30}
+            />
+          </a>
         </div>
 
         {/* 🔹 Firma y Copyright */}

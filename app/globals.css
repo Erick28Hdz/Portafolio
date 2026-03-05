@@ -8,6 +8,12 @@ body {
   margin: 0;
 }
 
+@layer components {
+  .main-layout {
+    @apply min-h-screen bg-secondary text-primary;
+  }
+}
+
 @keyframes fade-in-up {
   from {
     opacity: 0;
@@ -199,3 +205,4 @@ h4, h5, h6 {
 h4 { font-size: calc(var(--subtitulos) * 0.8); font-weight: 500; }
 h5 { font-size: 0.9rem; font-weight: 500; }
 h6 { font-size: 0.8rem; font-weight: 400; }
+
