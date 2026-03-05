@@ -82,7 +82,7 @@ export const proyectosData: ProyectosData = {
       imagen: "/images/Portadas/tienda-ag.png",
     },
     {
-      titulo: 'Landing Page "Fruver"',
+      titulo: 'Sitio web"Fruver"',
       descripcion: "Proyecto empresarial, sitio web para una tienda de frutas y verduras, desarrollado en Next.js, tailwind CSS, typescript.",
       tipo: "Proyecto Empresarial - Sitio web empresarial",
       enlace: "https://erick28hdz.github.io/BootstrapJavascript/",

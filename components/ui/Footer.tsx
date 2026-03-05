@@ -41,7 +41,7 @@ export default function Footer() {
             className="hover:scale-110 transition"
           >
             <Image
-              src="/images/Iconos/facebook1.png"
+              src="/images/Iconos/redes-sociales/facebook1.png"
               alt="Facebook"
               width={30}
               height={30}
@@ -55,7 +55,7 @@ export default function Footer() {
             className="hover:scale-110 transition"
           >
             <Image
-              src="/images/Iconos/instagram1.png"
+              src="/images/Iconos/redes-sociales/instagram1.png"
               alt="Instagram"
               width={30}
               height={30}
@@ -68,7 +68,7 @@ export default function Footer() {
             className="hover:scale-110 transition"
           >
             <Image
-              src="/images/Iconos/whatsapp1.png"
+              src="/images/Iconos/redes-sociales/whatsapp1.png"
               alt="WhatsApp"
               width={30}
               height={30}
@@ -82,7 +82,7 @@ export default function Footer() {
             className="hover:scale-110 transition"
           >
             <Image
-              src="/images/Iconos/linkedin1.png"
+              src="/images/Iconos/redes-sociales/linkedin1.png"
               alt="LinkedIn"
               width={30}
               height={30}
@@ -96,7 +96,7 @@ export default function Footer() {
             className="hover:scale-110 transition"
           >
             <Image
-              src="/images/Iconos/github1.png"
+              src="/images/Iconos/redes-sociales/github.png"
               alt="GitHub"
               width={30}
               height={30}
@@ -109,7 +109,7 @@ export default function Footer() {
             className="hover:scale-110 transition"
           >
             <Image
-              src="/images/Iconos/gmail1.png"
+              src="/images/Iconos/redes-sociales/gmail.png"
               alt="Gmail"
               width={30}
               height={30}
