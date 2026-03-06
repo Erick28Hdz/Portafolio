@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import SocialButtons from "./SocialButtons";
 
 export default function Footer() {
   return (
@@ -33,88 +34,10 @@ export default function Footer() {
         </div>
 
         {/* 🔹 Redes Sociales */}
-        <div className="flex justify-center gap-8 mb-12 flex-wrap">
-          <a
-            href="https://www.facebook.com/sapereaude.jsh/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:scale-110 transition"
-          >
-            <Image
-              src="/images/Iconos/redes-sociales/facebook1.png"
-              alt="Facebook"
-              width={30}
-              height={30}
-            />
-          </a>
-
-          <a
-            href="https://www.instagram.com/sapereaude.jsh/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:scale-110 transition"
-          >
-            <Image
-              src="/images/Iconos/redes-sociales/instagram1.png"
-              alt="Instagram"
-              width={30}
-              height={30}
-            />
-          </a>
-          <a
-            href="https://wa.me/573022016072"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:scale-110 transition"
-          >
-            <Image
-              src="/images/Iconos/redes-sociales/whatsapp1.png"
-              alt="WhatsApp"
-              width={30}
-              height={30}
-            />
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/erick-hernandez-sapere-aude/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:scale-110 transition"
-          >
-            <Image
-              src="/images/Iconos/redes-sociales/linkedin1.png"
-              alt="LinkedIn"
-              width={30}
-              height={30}
-            />
-          </a>
-
-          <a
-            href="https://github.com/Erick28Hdz"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:scale-110 transition"
-          >
-            <Image
-              src="/images/Iconos/redes-sociales/github.png"
-              alt="GitHub"
-              width={30}
-              height={30}
-            />
-          </a>
-          <a
-            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNsLfpjRFLdRpNPPBcFlCxFMdxhlfbWlshWCfLkhcmVxXVJBKtBkBSVhkJGgvBzcDpVBZL"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:scale-110 transition"
-          >
-            <Image
-              src="/images/Iconos/redes-sociales/gmail.png"
-              alt="Gmail"
-              width={30}
-              height={30}
-            />
-          </a>
+        <div className="mb-5">
+          <div className="flex justify-center gap-6">
+            <SocialButtons />
+          </div>
         </div>
 
         {/* 🔹 Firma y Copyright */}

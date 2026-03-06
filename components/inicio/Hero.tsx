@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { Button } from "@/components/ui/Button";
 import Image from "next/image";
+import SocialButtons from "@/components/ui/SocialButtons";
 /* ---------------- ICON ---------------- */
 
 const DotIcon = () => (
@@ -76,9 +76,7 @@ export default function HeroCode() {
             {/* Contenido + Botones */}
             <div className="flex-1 text-center lg:text-left space-y-6">
               <div className="flex gap-8 justify-center lg:justify-center pt-2">
-                <Button variant="secondary">Ver más</Button>
-
-                <Button variant="outlineGray">Contactarse</Button>
+                <SocialButtons />
               </div>
             </div>
           </div>
