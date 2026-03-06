@@ -59,6 +59,7 @@ export default function SocialButtons() {
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
+              data-social={social.name}
               className={`w-11 h-11 flex items-center justify-center bg-linear-to-br ${social.color} rounded-xl shadow-lg hover:scale-110 hover:-translate-y-1 transition`}
               style={{ clipPath: "url(#squircleClip)" }}
             >
