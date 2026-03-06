@@ -9,6 +9,7 @@ import GlowCard from "@/components/ui/GlowCard";
 import MapaSudamerica from "@/components/inicio/MapaSudamerica";
 import { JSX } from "react";
 
+
 export default function HomePage(): JSX.Element {
   return (
     <main>

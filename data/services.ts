@@ -35,7 +35,7 @@ export const serviceTabs: ServiceCategory[] = [
   },
   {
     id: 2,
-    name: "Ciberseguridad y Defensa Digital",
+    name: "Ciberseguridad",
     icon: "🔐",
     services: [
       {
