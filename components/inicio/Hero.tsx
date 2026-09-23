@@ -58,12 +58,12 @@ export default function HeroCode() {
             {/* Imagen del emprendimiento */}
             <div>
               <a
-                href="https://erick-sat.vercel.app/"
+                href="https://www.satcore.solutions/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="/images/Logos/logo personal/logo-no-background.svg"
+                  src="/images/Logos/logo personal/logo-primary.png"
                   alt="Software Screenshot"
                   width={210}
                   height={150}

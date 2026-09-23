@@ -12,12 +12,12 @@ export default function Footer() {
         <div className="flex flex-col items-center space-y-4 mb-10">
           <div className="flex justify-center w-full">
             <a
-              href="https://erick-sat.vercel.app/"
+              href="https://www.satcore.solutions/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image
-                src="/images/Logos/logo personal/logo-no-background.png"
+                src="/images/Logos/logo personal/logo-primary.png"
                 alt="Logo Erick SAT"
                 width={200}
                 height={70}
@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
 
           <p className="text-sm tracking-wider opacity-70 max-w-md">
-            ERICK SAT · Software and Technology | Desarrollo de Software,
+            SATCORE SOLUTIONS | Desarrollo de Software a la medida,
             Soluciones Tecnológicas y Consultoría en TI.
           </p>
         </div>

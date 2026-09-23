@@ -29,7 +29,7 @@ const socialLinks = [
   },
   {
     name: "Gmail",
-    url: "mailto:tuemail@gmail.com",
+    url: "mailto:erick.hdz9628@gmail.com",
     icon: "/images/Iconos/redes-sociales/gmail.png",
     color: "from-gray-500 to-gray-700 border-gray-400/50"
   },
